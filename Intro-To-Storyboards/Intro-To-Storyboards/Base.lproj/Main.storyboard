@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MJJ-xV-dJ8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome! Please login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Intro_To_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                                     <segue destination="iQa-jh-649" kind="show" id="3Rs-nc-c8a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome! Please login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTu-Em-d07">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTu-Em-d07">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,10 +71,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome! Please login" id="HXo-rf-Eyq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012.5" y="434"/>
+            <point key="canvasLocation" x="1054.5" y="720"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xty-VM-jXH">
@@ -91,7 +92,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Steve" translatesAutoresizingMaskIntoConstraints="NO" id="XdZ-uk-cjT">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="80" y="40" width="240" height="246"/>
+                                    <rect key="frame" x="80" y="96" width="240" height="246"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqP-PE-HOU">
@@ -100,14 +101,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="301" width="44" height="21"/>
+                                    <rect key="frame" x="177" y="357" width="44" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVm-0P-ba4">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Info"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="101" y="352" width="30" height="30"/>
+                                    <rect key="frame" x="101" y="408" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="NNP-jf-UNp" kind="presentation" id="p26-Vv-Hef"/>
@@ -117,7 +118,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Goals"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="258" y="352" width="39" height="30"/>
+                                    <rect key="frame" x="258" y="408" width="39" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="CUM-2J-LXi" kind="show" id="drj-a2-8An"/>
@@ -145,9 +146,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qb-rA-9lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1726.5" y="450"/>
+            <point key="canvasLocation" x="1768.5" y="736"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="cii-13-c8K">
+            <objects>
+                <navigationController id="MJJ-xV-dJ8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="abf-Wl-hjy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Mp-nZ-Kcl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDC-A5-Hcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="-183"/>
+        </scene>
+        <!--Goals-->
         <scene sceneID="A8n-WW-a1s">
             <objects>
                 <viewController id="CUM-2J-LXi" sceneMemberID="viewController">
@@ -156,67 +173,53 @@
                         <viewControllerLayoutGuide type="bottom" id="ULB-U9-zPi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vOi-JT-kae">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-Lv-7Q6">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <string key="text">The path of the righteous man is beset on all sides by the inequities of the selfish and the tyranny of evil men. Blessed is he, who in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.</string>
+                                <string key="text">They say that these are not the best of times but htey're the only times I've ever known. And I believe there is a time for medidation in cathedrals of our own. Now I have seen this sad surrender in my lover's eyes, and I can only stand aside and sympathize, for we are always what our situations hand us: it's either sadness or euphoria.</string>
                                 <color key="textColor" red="1" green="0.19815039509999999" blue="0.073721498230000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="80" y="212" width="240" height="312"/>
+                                    <rect key="frame" x="80" y="225" width="240" height="312"/>
                                 </variation>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catdog" translatesAutoresizingMaskIntoConstraints="NO" id="EVh-pk-2QP">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="80" y="76" width="240" height="128"/>
+                                    <rect key="frame" x="80" y="113" width="240" height="128"/>
                                 </variation>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08H-XQ-CDA">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="goals" id="52p-tF-Ntx">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="O6T-VN-Vhu">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Or-Y5-b7a">
-                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Info"/>
-                                                <connections>
-                                                    <segue destination="NNP-jf-UNp" kind="show" id="vrJ-fg-Hcy"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
-                                </variation>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="fvy-Lv-7Q6"/>
                                 <exclude reference="EVh-pk-2QP"/>
-                                <exclude reference="08H-XQ-CDA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="fvy-Lv-7Q6"/>
                                 <include reference="EVh-pk-2QP"/>
-                                <include reference="08H-XQ-CDA"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Goals" id="yax-jg-SOR">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="FYk-ZH-1Du">
+                            <connections>
+                                <segue destination="NNP-jf-UNp" kind="show" id="GvA-aS-bRy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZA-yd-DZp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488.5" y="15"/>
+            <point key="canvasLocation" x="2530.5" y="321"/>
         </scene>
-        <!--View Controller-->
+        <!--Info-->
         <scene sceneID="Q9N-lY-pPF">
             <objects>
                 <viewController id="NNP-jf-UNp" sceneMemberID="viewController">
@@ -225,46 +228,48 @@
                         <viewControllerLayoutGuide type="bottom" id="W5u-8Z-Z0q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6xd-mq-pF7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVS-8X-yA6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Info" id="nG5-R9-zrF"/>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-3" y="0.0" width="400" height="44"/>
-                                </variation>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Q5-1i-8ow">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Hi, my name is Steve. I like to run amazingly long distances through dark spooky forests in the middle of the night. I also sometimes write computer programs for fun and profit.</string>
+                                <string key="text">And so we argue and we compromise, and realize that nothing's ever changed. For all our mutual experience, our separate conclusions are the same. Now we are forced to recognize our inhumanity, a reason coexists with our insanity. And though we chooose between reality and madness, it's either sadness or euphoria</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="80" y="108" width="240" height="288"/>
                                 </variation>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwb-ta-wZ5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Info" id="Uf7-rr-k2y"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="xVS-8X-yA6"/>
                                 <exclude reference="3Q5-1i-8ow"/>
+                                <exclude reference="zwb-ta-wZ5"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="xVS-8X-yA6"/>
                                 <include reference="3Q5-1i-8ow"/>
+                                <include reference="zwb-ta-wZ5"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Info" id="igL-7o-nQb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIh-K2-K7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488.5" y="818"/>
+            <point key="canvasLocation" x="2530.5" y="1104"/>
         </scene>
     </scenes>
     <resources>
@@ -272,6 +277,6 @@
         <image name="catdog" width="438" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vrJ-fg-Hcy"/>
+        <segue reference="GvA-aS-bRy"/>
     </inferredMetricsTieBreakers>
 </document>
