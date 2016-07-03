@@ -13,6 +13,7 @@
 		9A88CE111D29BA4500FA1B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A88CE101D29BA4500FA1B88 /* Assets.xcassets */; };
 		9A88CE141D29BA4500FA1B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A88CE121D29BA4500FA1B88 /* LaunchScreen.storyboard */; };
 		9A88CE1F1D29BA4600FA1B88 /* assignment2_promptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CE1E1D29BA4600FA1B88 /* assignment2_promptTests.swift */; };
+		9A88CE2A1D29BD4E00FA1B88 /* AgeVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CE291D29BD4E00FA1B88 /* AgeVerificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9A88CE1A1D29BA4600FA1B88 /* assignment2-promptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "assignment2-promptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A88CE1E1D29BA4600FA1B88 /* assignment2_promptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment2_promptTests.swift; sourceTree = "<group>"; };
 		9A88CE201D29BA4600FA1B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A88CE291D29BD4E00FA1B88 /* AgeVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeVerificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				9A88CE101D29BA4500FA1B88 /* Assets.xcassets */,
 				9A88CE121D29BA4500FA1B88 /* LaunchScreen.storyboard */,
 				9A88CE151D29BA4500FA1B88 /* Info.plist */,
+				9A88CE291D29BD4E00FA1B88 /* AgeVerificationViewController.swift */,
 			);
 			path = "assignment2-prompt";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				9A88CE0C1D29BA4500FA1B88 /* ViewController.swift in Sources */,
 				9A88CE0A1D29BA4500FA1B88 /* AppDelegate.swift in Sources */,
+				9A88CE2A1D29BD4E00FA1B88 /* AgeVerificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
