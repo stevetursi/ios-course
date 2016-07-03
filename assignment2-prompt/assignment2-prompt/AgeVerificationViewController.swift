@@ -9,7 +9,7 @@
 import UIKit
 
 
-class AgeVerificationViewController: ViewController {
+class AgeVerificationViewController: UIViewController {
     
     let year: Int;
     
