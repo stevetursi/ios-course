@@ -15,6 +15,7 @@
 		9A88CE1F1D29BA4600FA1B88 /* assignment2_promptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CE1E1D29BA4600FA1B88 /* assignment2_promptTests.swift */; };
 		9A88CE2A1D29BD4E00FA1B88 /* AgeVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CE291D29BD4E00FA1B88 /* AgeVerificationViewController.swift */; };
 		9A88CE2C1D29CD5A00FA1B88 /* BillSplitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CE2B1D29CD5A00FA1B88 /* BillSplitterViewController.swift */; };
+		9A88CE2E1D29D76500FA1B88 /* GuessNumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CE2D1D29D76500FA1B88 /* GuessNumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9A88CE201D29BA4600FA1B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A88CE291D29BD4E00FA1B88 /* AgeVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeVerificationViewController.swift; sourceTree = "<group>"; };
 		9A88CE2B1D29CD5A00FA1B88 /* BillSplitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillSplitterViewController.swift; sourceTree = "<group>"; };
+		9A88CE2D1D29D76500FA1B88 /* GuessNumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessNumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				9A88CE151D29BA4500FA1B88 /* Info.plist */,
 				9A88CE291D29BD4E00FA1B88 /* AgeVerificationViewController.swift */,
 				9A88CE2B1D29CD5A00FA1B88 /* BillSplitterViewController.swift */,
+				9A88CE2D1D29D76500FA1B88 /* GuessNumViewController.swift */,
 			);
 			path = "assignment2-prompt";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				9A88CE2C1D29CD5A00FA1B88 /* BillSplitterViewController.swift in Sources */,
 				9A88CE0C1D29BA4500FA1B88 /* ViewController.swift in Sources */,
 				9A88CE0A1D29BA4500FA1B88 /* AppDelegate.swift in Sources */,
+				9A88CE2E1D29D76500FA1B88 /* GuessNumViewController.swift in Sources */,
 				9A88CE2A1D29BD4E00FA1B88 /* AgeVerificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
