@@ -1,0 +1,7 @@
+{
+   "Vehicles": [   
+      {"make": "Honda", "model": "Civic", "year": 2014, "price": 12345.67},
+      {"make": "Ford", "model": "Focus", "year": 2015, "price": 11234.98},
+      {"make": "Chevy", "model": "Volt", "year": 2016, "price": 21345.21}
+   ]
+}

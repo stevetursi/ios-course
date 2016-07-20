@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Add Car-->
+        <scene sceneID="wL5-80-YJr">
+            <objects>
+                <viewController storyboardIdentifier="AddCarStoryboard" id="klt-yg-Kr1" customClass="AddNavController" customModule="CarDealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TbX-QE-jUn"/>
+                        <viewControllerLayoutGuide type="bottom" id="1LA-pH-cwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6om-Ub-Oui">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Car" id="nKj-Nn-xF5">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="nGl-Vl-TpV">
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="klt-yg-Kr1" id="W7p-Hn-0XY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kp8-xv-Bhn">
+                            <connections>
+                                <action selector="addButtonAction:" destination="klt-yg-Kr1" id="2mT-Vo-IuO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gnr-Kr-eAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960" y="357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ovs-Qm-lSj">
+            <objects>
+                <navigationController storyboardIdentifier="AddNavController" automaticallyAdjustsScrollViewInsets="NO" id="JwS-6s-4zu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OXU-Zi-gtr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="klt-yg-Kr1" kind="relationship" relationship="rootViewController" id="j1x-Wv-UTE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cS-S1-Gwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="357"/>
+        </scene>
+    </scenes>
+</document>
