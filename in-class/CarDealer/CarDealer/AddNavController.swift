@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CarWasAddedDelegate {
+protocol CarWasAddedDelegate: class {
     func addCar(car: Vehicle)
 }
 

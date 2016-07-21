@@ -47,6 +47,7 @@ class DealerTableViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let thisVehicle = model[indexPath.row]
                 vvc.vehicle = thisVehicle;
+                vvc.delegate = self;
             }
             
         }
@@ -71,4 +72,16 @@ extension DealerTableViewController: CarWasAddedDelegate {
         tableView.reloadData()
     }
     
+}
+
+extension DealerTableViewController: CarWasDeletedDelegate {
+    func deleteCar(car: Vehicle) {
+        print("VEHICLE WAS DELETED")
+        if let indexPath = tableView.indexPathForSelectedRow {
+            model.removeAtIndex(indexPath.row)
+        }
+        
+        
+        tableView.reloadData()
+    }
 }

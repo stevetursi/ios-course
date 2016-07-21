@@ -22,7 +22,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Xky-Z9-0Ia" kind="show" id="833-N2-YfZ"/>
+                                    <segue destination="7ar-DY-2Gy" kind="show" id="kpz-lV-J3r"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -43,25 +43,42 @@
             </objects>
             <point key="canvasLocation" x="478.5" y="159"/>
         </scene>
-        <!--Detail-->
-        <scene sceneID="SO9-sD-NAW">
+        <!--detail-->
+        <scene sceneID="Pu3-24-toc">
             <objects>
-                <viewController id="Xky-Z9-0Ia" customClass="VehicleViewController" customModule="CarDealer" customModuleProvider="target" sceneMemberID="viewController">
-                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zJN-ar-5eZ">
-                        <rect key="frame" x="-42" y="-21" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <navigationItem key="navigationItem" title="Detail" id="lwI-FV-CD6"/>
+                <viewController id="7ar-DY-2Gy" customClass="VehicleViewController" customModule="CarDealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vcj-pd-vL9"/>
+                        <viewControllerLayoutGuide type="bottom" id="K1K-c0-gMP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tRr-Nb-pX1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4g-EM-GXx">
+                                <rect key="frame" x="108" y="166" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="detail" id="AO5-gf-lPK">
+                        <barButtonItem key="rightBarButtonItem" title="delete" id="tOq-Jz-Yqh">
+                            <color key="tintColor" red="1" green="0.10850609558253066" blue="0.16498173556595597" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deleteButtonClicked:" destination="7ar-DY-2Gy" id="PdJ-SB-jbC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="priceLabel" destination="zJN-ar-5eZ" id="xlq-uC-ab4"/>
+                        <outlet property="priceLabel" destination="c4g-EM-GXx" id="yeI-Ph-jfP"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b4m-pk-AY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkX-5z-q7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="158"/>
+            <point key="canvasLocation" x="1193" y="159"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I4X-Z7-JwD">

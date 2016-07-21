@@ -8,10 +8,26 @@
 
 import UIKit
 
+protocol CarWasDeletedDelegate: class {
+    func deleteCar(car: Vehicle)
+}
+
+
 class VehicleViewController: UIViewController {
 
+    var delegate: CarWasDeletedDelegate?
     @IBOutlet var priceLabel: UILabel!
     var vehicle: Vehicle?
+    
+    @IBAction func deleteButtonClicked(sender: UIBarButtonItem) {
+    
+        guard let vehicle = vehicle else {
+            navigationController?.popViewControllerAnimated(true)
+            return
+        }
+        delegate?.deleteCar(vehicle)
+        navigationController?.popViewControllerAnimated(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
