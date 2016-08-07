@@ -14,8 +14,6 @@
 		9A8E38911D5778C300A63DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8E388F1D5778C300A63DC4 /* LaunchScreen.storyboard */; };
 		9A8E389C1D5778C300A63DC4 /* midtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E389B1D5778C300A63DC4 /* midtermTests.swift */; };
 		9A8E38A71D577E2900A63DC4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38A61D577E2900A63DC4 /* RegisterViewController.swift */; };
-		9A8E38A91D577F4600A63DC4 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38A81D577F4600A63DC4 /* Cart.swift */; };
-		9A8E38AB1D577F5500A63DC4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38AA1D577F5500A63DC4 /* Item.swift */; };
 		9A8E38AE1D578F8100A63DC4 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38AC1D578F8100A63DC4 /* CatalogViewController.swift */; };
 		9A8E38B11D57904800A63DC4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38B01D57904800A63DC4 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,8 +40,6 @@
 		9A8E389B1D5778C300A63DC4 /* midtermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = midtermTests.swift; sourceTree = "<group>"; };
 		9A8E389D1D5778C300A63DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8E38A61D577E2900A63DC4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		9A8E38A81D577F4600A63DC4 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		9A8E38AA1D577F5500A63DC4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9A8E38AC1D578F8100A63DC4 /* CatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		9A8E38B01D57904800A63DC4 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,8 +90,6 @@
 				9A8E388F1D5778C300A63DC4 /* LaunchScreen.storyboard */,
 				9A8E38921D5778C300A63DC4 /* Info.plist */,
 				9A8E38A61D577E2900A63DC4 /* RegisterViewController.swift */,
-				9A8E38A81D577F4600A63DC4 /* Cart.swift */,
-				9A8E38AA1D577F5500A63DC4 /* Item.swift */,
 				9A8E38AC1D578F8100A63DC4 /* CatalogViewController.swift */,
 				9A8E38B01D57904800A63DC4 /* AddViewController.swift */,
 			);
@@ -213,12 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A8E38AE1D578F8100A63DC4 /* CatalogViewController.swift in Sources */,
-				9A8E38AB1D577F5500A63DC4 /* Item.swift in Sources */,
 				9A8E38B11D57904800A63DC4 /* AddViewController.swift in Sources */,
 				9A8E38A71D577E2900A63DC4 /* RegisterViewController.swift in Sources */,
 				9A8E38891D5778C300A63DC4 /* ViewController.swift in Sources */,
 				9A8E38871D5778C300A63DC4 /* AppDelegate.swift in Sources */,
-				9A8E38A91D577F4600A63DC4 /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +400,7 @@
 				9A8E38A21D5778C300A63DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A8E38A31D5778C300A63DC4 /* Build configuration list for PBXNativeTarget "midtermTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +409,7 @@
 				9A8E38A51D5778C300A63DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

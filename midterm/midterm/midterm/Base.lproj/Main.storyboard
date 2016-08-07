@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -27,12 +28,15 @@
             <objects>
                 <tableViewController id="bGh-q3-13P" customClass="RegisterViewController" customModule="midterm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7uA-jN-aOn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="inL-S0-Dq9">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="inL-S0-Dq9" id="ooF-mQ-kMW">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -64,6 +68,7 @@
                         <viewControllerLayoutGuide type="bottom" id="i4Y-i9-0fs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yVi-a9-A5s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ToH-dz-VO6" userLabel="Item2">
@@ -368,20 +373,20 @@
                                 <exclude reference="Ahm-JK-hpQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="M97-Wz-vTx"/>
-                                <exclude reference="eyA-XR-uwD"/>
+                                <exclude reference="6qZ-jI-r8x"/>
+                                <exclude reference="DNk-f9-cpJ"/>
                                 <exclude reference="JLN-kk-gV9"/>
                                 <exclude reference="i6Y-gs-bXM"/>
-                                <exclude reference="Jdp-xb-1BM"/>
-                                <exclude reference="MMF-hu-isa"/>
-                                <exclude reference="gah-d5-zzv"/>
-                                <exclude reference="yKK-B8-e1E"/>
                                 <exclude reference="BVs-tL-m5z"/>
                                 <exclude reference="NBi-Sj-3S6"/>
                                 <exclude reference="O6Z-8J-X8O"/>
                                 <exclude reference="lLc-xz-BJP"/>
-                                <exclude reference="6qZ-jI-r8x"/>
-                                <exclude reference="DNk-f9-cpJ"/>
+                                <exclude reference="Jdp-xb-1BM"/>
+                                <exclude reference="MMF-hu-isa"/>
+                                <exclude reference="gah-d5-zzv"/>
+                                <exclude reference="yKK-B8-e1E"/>
+                                <exclude reference="M97-Wz-vTx"/>
+                                <exclude reference="eyA-XR-uwD"/>
                                 <exclude reference="XoD-dc-fnL"/>
                                 <exclude reference="fmu-KA-IYQ"/>
                                 <exclude reference="nnj-aF-w1T"/>
@@ -398,20 +403,20 @@
                                 <include reference="Ahm-JK-hpQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="M97-Wz-vTx"/>
-                                <include reference="eyA-XR-uwD"/>
+                                <include reference="6qZ-jI-r8x"/>
+                                <include reference="DNk-f9-cpJ"/>
                                 <include reference="JLN-kk-gV9"/>
                                 <include reference="i6Y-gs-bXM"/>
-                                <include reference="Jdp-xb-1BM"/>
-                                <include reference="MMF-hu-isa"/>
-                                <include reference="gah-d5-zzv"/>
-                                <include reference="yKK-B8-e1E"/>
                                 <include reference="BVs-tL-m5z"/>
                                 <include reference="NBi-Sj-3S6"/>
                                 <include reference="O6Z-8J-X8O"/>
                                 <include reference="lLc-xz-BJP"/>
-                                <include reference="6qZ-jI-r8x"/>
-                                <include reference="DNk-f9-cpJ"/>
+                                <include reference="Jdp-xb-1BM"/>
+                                <include reference="MMF-hu-isa"/>
+                                <include reference="gah-d5-zzv"/>
+                                <include reference="yKK-B8-e1E"/>
+                                <include reference="M97-Wz-vTx"/>
+                                <include reference="eyA-XR-uwD"/>
                                 <include reference="XoD-dc-fnL"/>
                                 <include reference="fmu-KA-IYQ"/>
                                 <include reference="nnj-aF-w1T"/>
@@ -433,6 +438,7 @@
                         <viewControllerLayoutGuide type="bottom" id="a0k-eG-W3t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1UO-3Y-FcF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtn-Vm-xGn">
@@ -453,24 +459,62 @@
                                     <rect key="frame" x="236" y="82" width="144" height="26"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xud-tf-82N">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="142" width="97" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="qtyChangedEvent:" destination="cWc-m1-CkZ" eventType="editingChanged" id="aq8-wH-sPL"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCs-6Q-lpj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add To Cart"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="159" y="196" width="82" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="bGh-q3-13P" kind="show" id="l2a-96-a7r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TotalPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbz-k1-Af0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="236" y="142" width="77" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rtn-Vm-xGn"/>
                                 <exclude reference="kRa-u3-wNl"/>
+                                <exclude reference="xud-tf-82N"/>
+                                <exclude reference="SCs-6Q-lpj"/>
+                                <exclude reference="Dbz-k1-Af0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rtn-Vm-xGn"/>
                                 <include reference="kRa-u3-wNl"/>
+                                <include reference="xud-tf-82N"/>
+                                <include reference="SCs-6Q-lpj"/>
+                                <include reference="Dbz-k1-Af0"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="itemNameLabel" destination="rtn-Vm-xGn" id="ke2-bJ-lrH"/>
                         <outlet property="itemPriceLabel" destination="kRa-u3-wNl" id="ESp-CH-3PT"/>
+                        <outlet property="quantityField" destination="xud-tf-82N" id="ce8-Um-NKd"/>
+                        <outlet property="totalPriceLabel" destination="Dbz-k1-Af0" id="4Uy-ZL-j6M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blE-ZQ-kvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -479,6 +523,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="l2a-96-a7r"/>
         <segue reference="mOT-17-TDJ"/>
     </inferredMetricsTieBreakers>
 </document>

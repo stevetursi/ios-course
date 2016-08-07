@@ -15,10 +15,12 @@ protocol SelectItemDelegate {
 class AddViewController: UIViewController {
     
     private var catalog: [String: Int]?
+    private var itemPrice: Int?
+    
     var delegate: SelectItemDelegate?
-
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var quantityField: UITextField!
     @IBOutlet weak var itemNameLabel: UILabel!
-
     @IBOutlet weak var itemPriceLabel: UILabel!
     
     override func viewDidLoad() {
@@ -26,7 +28,10 @@ class AddViewController: UIViewController {
         if let itemName = delegate?.getItem() {
             itemNameLabel.text = itemName
             if let itemPrice = catalog![itemName] {
+                self.itemPrice = itemPrice;
                 itemPriceLabel.text = priceReadable(itemPrice)
+
+                updatePrice()
             }
             
         } else {
@@ -43,6 +48,15 @@ class AddViewController: UIViewController {
     
     func priceReadable(priceRaw: Int) -> String {
         return "$" + String(format: "%.2f", Float(priceRaw)/100)
+    }
+    
+    func updatePrice() {
+        let qty = Int(quantityField.text!) ?? 0
+        totalPriceLabel.text = priceReadable(itemPrice! * qty)
+    }
+    
+    @IBAction func qtyChangedEvent(sender: AnyObject) {
+        updatePrice()
     }
 
 }
