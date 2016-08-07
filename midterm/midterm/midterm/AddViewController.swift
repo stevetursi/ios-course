@@ -37,8 +37,6 @@ class AddViewController: UIViewController {
         } else {
             // handle the error
         }
-        
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +55,13 @@ class AddViewController: UIViewController {
     
     @IBAction func qtyChangedEvent(sender: AnyObject) {
         updatePrice()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let registerVc = segue.destinationViewController as? RegisterViewController {
+            let qty = Int(quantityField.text!) ?? 0
+            registerVc.addItem(delegate!.getItem()!, qty: qty)
+        }
     }
 
 }

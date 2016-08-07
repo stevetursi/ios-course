@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ItemWasAddedDelegate {
+    func addItem(name: String, qty: Int)
+}
+
 class RegisterViewController: UITableViewController {
     
     let catalog: [String: Int] =
@@ -23,6 +27,8 @@ class RegisterViewController: UITableViewController {
         cart["Widget"] = 1;
         cart["Contraption"] = 4;
     
+        
+        tableView.reloadData()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,5 +53,12 @@ class RegisterViewController: UITableViewController {
         if let catalogvc = segue.destinationViewController as? HasCatalog {
             catalogvc.setCatalog(catalog);
         }
+    }
+}
+
+extension RegisterViewController: ItemWasAddedDelegate {
+    func addItem(name: String, qty: Int) {
+        cart[name] = (cart[name] ?? 0) + qty
+        tableView.reloadData()
     }
 }
