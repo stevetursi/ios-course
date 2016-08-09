@@ -1,10 +1,3 @@
-//
-//  CatalogViewController.swift
-//  midterm
-//
-//  Created by Lovey on 8/7/16.
-//  Copyright © 2016 steve. All rights reserved.
-//
 
 import UIKit
 
@@ -13,9 +6,13 @@ protocol HasCatalog {
     func setCatalog(catalog: [String: Int])
 }
 
-class CatalogViewController: UIViewController {
 
-    private var catalog: [String: Int]?
+
+class CatalogViewController: UIViewController {
+    
+    private var cart: [String: Int] = [:]
+
+    private var catalog: [String: Int] = [:]
     var selectedItem: String?
 
     override func viewDidLoad() {
@@ -28,7 +25,8 @@ class CatalogViewController: UIViewController {
         selectedItem = sender?.currentTitle
         if let addVc = segue.destinationViewController as? AddViewController {
             addVc.delegate = self
-            addVc.setCatalog(catalog!)
+            addVc.setCatalog(catalog)
+            addVc.setCart(cart)
         }
     }
     
@@ -36,7 +34,7 @@ class CatalogViewController: UIViewController {
 
 extension CatalogViewController: HasCatalog {
     func getCatalog() -> [String : Int] {
-        return catalog!
+        return catalog
     }
     func setCatalog(catalog: [String : Int]) {
         self.catalog = catalog
@@ -46,5 +44,14 @@ extension CatalogViewController: HasCatalog {
 extension CatalogViewController: SelectItemDelegate {
     func getItem() -> String? {
         return selectedItem
+    }
+}
+
+extension CatalogViewController: HasCart {
+    func getCart() -> [String: Int] {
+        return cart
+    }
+    func setCart(cart: [String: Int]) {
+        self.cart = cart
     }
 }

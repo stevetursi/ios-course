@@ -1,10 +1,4 @@
-//
-//  RegisterViewController.swift
-//  midterm
-//
-//  Created by Lovey on 8/7/16.
-//  Copyright © 2016 steve. All rights reserved.
-//
+
 
 import UIKit
 
@@ -12,36 +6,60 @@ protocol ItemWasAddedDelegate {
     func addItem(name: String, qty: Int)
 }
 
+protocol HasCart {
+    func getCart() -> [String: Int]
+    func setCart(cart: [String: Int])
+}
+
 class RegisterViewController: UITableViewController {
     
     let catalog: [String: Int] =
         ["Thing": 999, "Doo-Dad": 499, "Whatchamacallit": 2000, "Widget": 99, "Contraption": 1599, "Doohicky": 397]
     
-    var cart: [String: Int] = [:]
+    private var cart: [String: Int] = [:]
 
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cart["Thing"] = 2;
-        cart["Widget"] = 1;
-        cart["Contraption"] = 4;
-    
-        
         tableView.reloadData()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cart.count
+        return cart.count+1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CartLine", forIndexPath: indexPath)
-        let key = (Array(cart.keys))[indexPath.row]
-        let qty = cart[key]
+        let row = indexPath.row
+        if let cell = tableView.dequeueReusableCellWithIdentifier("CartLine", forIndexPath: indexPath) as? CartItemTableViewCell {
+            if row < cart.count {
+                let key = (Array(cart.keys))[row]
+                let qty = cart[key]!
+            
+                let price = Utility.priceReadable(qty*(catalog[key] ?? 0))
         
-        cell.textLabel?.text = "\(key) - \(qty)"
-        return cell
+                cell.nameLabel?.text = "\(key)"
+                cell.qtyLabel?.text = "\(qty)"
+                cell.priceLabel?.text = "\(price)"
+                return cell
+            } else {
+//                let totalQty = cart.values.reduce(0, combine: +)
+//                let totalPrice = cart.keys.reduce(0, combine: { $0 + (cart[$1] ?? 0) * (catalog[$1] ?? 0) })
+  
+                let (totalQty, totalPrice) = Utility.totals(cart, catalog: self.catalog)
+                
+                
+                cell.backgroundColor = UIColor.blackColor()
+                cell.nameLabel?.text = "TOTAL"
+                cell.nameLabel?.textColor = UIColor.whiteColor()
+                cell.qtyLabel?.text = "\(totalQty)"
+                cell.qtyLabel?.textColor = UIColor.whiteColor()
+                cell.priceLabel?.text = "\(Utility.priceReadable(totalPrice))"
+                cell.priceLabel?.textColor = UIColor.whiteColor()
+                
+            }
+        }
+        return tableView.dequeueReusableCellWithIdentifier("CartLine", forIndexPath: indexPath)
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,12 +71,18 @@ class RegisterViewController: UITableViewController {
         if let catalogvc = segue.destinationViewController as? HasCatalog {
             catalogvc.setCatalog(catalog);
         }
+        if let cartvc = segue.destinationViewController as? HasCart {
+            cartvc.setCart(cart);
+        }
     }
 }
 
-extension RegisterViewController: ItemWasAddedDelegate {
-    func addItem(name: String, qty: Int) {
-        cart[name] = (cart[name] ?? 0) + qty
-        tableView.reloadData()
+extension RegisterViewController: HasCart {
+    func getCart() -> [String: Int] {
+        return cart
     }
+    func setCart(cart: [String: Int]) {
+        self.cart = cart
+    }
+    
 }

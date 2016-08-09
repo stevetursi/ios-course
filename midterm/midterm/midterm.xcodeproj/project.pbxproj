@@ -16,6 +16,8 @@
 		9A8E38A71D577E2900A63DC4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38A61D577E2900A63DC4 /* RegisterViewController.swift */; };
 		9A8E38AE1D578F8100A63DC4 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38AC1D578F8100A63DC4 /* CatalogViewController.swift */; };
 		9A8E38B11D57904800A63DC4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38B01D57904800A63DC4 /* AddViewController.swift */; };
+		A73658A61D598197006E7BA1 /* CartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73658A51D598197006E7BA1 /* CartItemTableViewCell.swift */; };
+		A73658A81D5A1505006E7BA1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73658A71D5A1505006E7BA1 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		9A8E38A61D577E2900A63DC4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9A8E38AC1D578F8100A63DC4 /* CatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		9A8E38B01D57904800A63DC4 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		A73658A51D598197006E7BA1 /* CartItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCell.swift; sourceTree = "<group>"; };
+		A73658A71D5A1505006E7BA1 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				9A8E38A61D577E2900A63DC4 /* RegisterViewController.swift */,
 				9A8E38AC1D578F8100A63DC4 /* CatalogViewController.swift */,
 				9A8E38B01D57904800A63DC4 /* AddViewController.swift */,
+				A73658A51D598197006E7BA1 /* CartItemTableViewCell.swift */,
+				A73658A71D5A1505006E7BA1 /* Utility.swift */,
 			);
 			path = midterm;
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73658A81D5A1505006E7BA1 /* Utility.swift in Sources */,
 				9A8E38AE1D578F8100A63DC4 /* CatalogViewController.swift in Sources */,
 				9A8E38B11D57904800A63DC4 /* AddViewController.swift in Sources */,
+				A73658A61D598197006E7BA1 /* CartItemTableViewCell.swift in Sources */,
 				9A8E38A71D577E2900A63DC4 /* RegisterViewController.swift in Sources */,
 				9A8E38891D5778C300A63DC4 /* ViewController.swift in Sources */,
 				9A8E38871D5778C300A63DC4 /* AppDelegate.swift in Sources */,
@@ -294,6 +302,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -331,6 +340,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

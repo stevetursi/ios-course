@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokemon_Teams" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mystic" translatesAutoresizingMaskIntoConstraints="NO" id="K8b-1O-iEQ" userLabel="Team Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="omq-rW-J2v">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-Vo-NSb" userLabel="Valor Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.11242632745804659" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Valor"/>
+                                        <connections>
+                                            <action selector="valorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lX6-eg-ieD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqt-ni-Jzh" userLabel="Mystic Button">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.89771240084563342" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Mystic"/>
+                                        <connections>
+                                            <action selector="mysticButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0R-3s-u9o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCM-ef-Fvm" userLabel="Instinct Button">
+                                        <rect key="frame" x="400" y="0.0" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.96452680848033889" green="1" blue="0.05574446989985038" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Instinct"/>
+                                        <connections>
+                                            <action selector="instinctButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwz-8C-M6K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="juz-Dz-sg3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K8b-1O-iEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2A7-RO-wNO"/>
+                            <constraint firstAttribute="trailing" secondItem="K8b-1O-iEQ" secondAttribute="trailing" id="LtW-ZY-yz9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="omq-rW-J2v" secondAttribute="bottom" id="PLz-RP-tTG"/>
+                            <constraint firstItem="K8b-1O-iEQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TNE-Tq-Y2O"/>
+                            <constraint firstItem="omq-rW-J2v" firstAttribute="top" secondItem="K8b-1O-iEQ" secondAttribute="bottom" id="YJL-LN-UHl"/>
+                            <constraint firstAttribute="trailing" secondItem="omq-rW-J2v" secondAttribute="trailing" id="Zav-OH-aYb"/>
+                            <constraint firstItem="omq-rW-J2v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gr7-7v-cUF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="teamImageView" destination="K8b-1O-iEQ" id="OyY-iZ-rNC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mystic" width="780" height="440"/>
+    </resources>
+</document>
