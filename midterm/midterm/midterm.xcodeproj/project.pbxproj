@@ -18,6 +18,8 @@
 		9A8E38B11D57904800A63DC4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E38B01D57904800A63DC4 /* AddViewController.swift */; };
 		A73658A61D598197006E7BA1 /* CartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73658A51D598197006E7BA1 /* CartItemTableViewCell.swift */; };
 		A73658A81D5A1505006E7BA1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73658A71D5A1505006E7BA1 /* Utility.swift */; };
+		A73658AA1D5A1A86006E7BA1 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73658A91D5A1A86006E7BA1 /* CheckoutViewController.swift */; };
+		A73658AC1D5A5216006E7BA1 /* ChangeDueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73658AB1D5A5216006E7BA1 /* ChangeDueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		9A8E38B01D57904800A63DC4 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		A73658A51D598197006E7BA1 /* CartItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCell.swift; sourceTree = "<group>"; };
 		A73658A71D5A1505006E7BA1 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A73658A91D5A1A86006E7BA1 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		A73658AB1D5A5216006E7BA1 /* ChangeDueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeDueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				9A8E38B01D57904800A63DC4 /* AddViewController.swift */,
 				A73658A51D598197006E7BA1 /* CartItemTableViewCell.swift */,
 				A73658A71D5A1505006E7BA1 /* Utility.swift */,
+				A73658A91D5A1A86006E7BA1 /* CheckoutViewController.swift */,
+				A73658AB1D5A5216006E7BA1 /* ChangeDueViewController.swift */,
 			);
 			path = midterm;
 			sourceTree = "<group>";
@@ -216,6 +222,8 @@
 				9A8E38AE1D578F8100A63DC4 /* CatalogViewController.swift in Sources */,
 				9A8E38B11D57904800A63DC4 /* AddViewController.swift in Sources */,
 				A73658A61D598197006E7BA1 /* CartItemTableViewCell.swift in Sources */,
+				A73658AA1D5A1A86006E7BA1 /* CheckoutViewController.swift in Sources */,
+				A73658AC1D5A5216006E7BA1 /* ChangeDueViewController.swift in Sources */,
 				9A8E38A71D577E2900A63DC4 /* RegisterViewController.swift in Sources */,
 				9A8E38891D5778C300A63DC4 /* ViewController.swift in Sources */,
 				9A8E38871D5778C300A63DC4 /* AppDelegate.swift in Sources */,

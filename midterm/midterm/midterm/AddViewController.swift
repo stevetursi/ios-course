@@ -1,9 +1,6 @@
 
 import UIKit
 
-protocol SelectItemDelegate {
-    func getItem() -> String?
-}
 
 class AddViewController: UIViewController {
     

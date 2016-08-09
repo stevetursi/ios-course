@@ -1,12 +1,6 @@
 
 import UIKit
 
-protocol HasCatalog {
-    func getCatalog() -> [String: Int]
-    func setCatalog(catalog: [String: Int])
-}
-
-
 
 class CatalogViewController: UIViewController {
     

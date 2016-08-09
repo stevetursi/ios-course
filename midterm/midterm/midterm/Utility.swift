@@ -8,6 +8,20 @@
 
 import Foundation
 
+protocol SelectItemDelegate {
+    func getItem() -> String?
+}
+
+protocol HasCart {
+    func getCart() -> [String: Int]
+    func setCart(cart: [String: Int])
+}
+
+protocol HasCatalog {
+    func getCatalog() -> [String: Int]
+    func setCatalog(catalog: [String: Int])
+}
+
 class Utility {
     
     class func priceReadable(priceRaw: Int) -> String {

@@ -2,15 +2,6 @@
 
 import UIKit
 
-protocol ItemWasAddedDelegate {
-    func addItem(name: String, qty: Int)
-}
-
-protocol HasCart {
-    func getCart() -> [String: Int]
-    func setCart(cart: [String: Int])
-}
-
 class RegisterViewController: UITableViewController {
     
     let catalog: [String: Int] =
@@ -43,11 +34,7 @@ class RegisterViewController: UITableViewController {
                 cell.priceLabel?.text = "\(price)"
                 return cell
             } else {
-//                let totalQty = cart.values.reduce(0, combine: +)
-//                let totalPrice = cart.keys.reduce(0, combine: { $0 + (cart[$1] ?? 0) * (catalog[$1] ?? 0) })
-  
                 let (totalQty, totalPrice) = Utility.totals(cart, catalog: self.catalog)
-                
                 
                 cell.backgroundColor = UIColor.blackColor()
                 cell.nameLabel?.text = "TOTAL"
@@ -84,5 +71,4 @@ extension RegisterViewController: HasCart {
     func setCart(cart: [String: Int]) {
         self.cart = cart
     }
-    
 }
