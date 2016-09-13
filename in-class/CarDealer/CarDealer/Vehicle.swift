@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Vehicle {
+class Vehicle :NSObject, NSCoding {
     
     let make: String
     let model: String
@@ -21,6 +21,29 @@ class Vehicle {
         self.model = model;
         self.year = year;
         self.price = price;
+    }
+    
+    required init?(coder decoder: NSCoder) {
+        if
+            let make = decoder.decodeObjectForKey("vehicle_make") as? String,
+            let model = decoder.decodeObjectForKey("vehicle_model") as? String,
+            let year = decoder.decodeObjectForKey("vehicle_year") as? Int,
+            let price = decoder.decodeObjectForKey("vehicle_price") as? Double
+        {
+            self.make = make;
+            self.model = model;
+            self.year = year;
+            self.price = price;
+        } else {
+            return nil
+        }
+    }
+
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(make, forKey:"vehicle_make")
+        aCoder.encodeObject(model, forKey:"vehicle_model")
+        aCoder.encodeObject(year, forKey:"vehicle_year")
+        aCoder.encodeObject(price, forKey:"vehicle_price")
     }
     
 }

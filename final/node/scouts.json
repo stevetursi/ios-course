@@ -1,0 +1,159 @@
+{
+	"scouts": [{
+		"name": "Abbott, Bill",
+		"patrol": "Bomber",
+		"rank": "First Class"
+	}, {
+		"name": "Ajao, Femi",
+		"patrol": "Bomber",
+		"rank": "Scout"
+	}, {
+		"name": "Ajao, Tobi",
+		"patrol": "Racoon",
+		"rank": "Scout"
+	}, {
+		"name": "Alfano, Michael",
+		"patrol": "Eagle",
+		"rank": "Pre-Scout"
+	}, {
+		"name": "Baez, Matthew",
+		"patrol": "Simba",
+		"rank": "Second Class"
+	}, {
+		"name": "Baker, Matt",
+		"patrol": "Phoenix",
+		"rank": "First Class"
+	}, {
+		"name": "Baker, Matt",
+		"patrol": "Simba",
+		"rank": "Pre-Scout"
+	}, {
+		"name": "Castro, Michael",
+		"patrol": "Phoenix",
+		"rank": "Second Class"
+	}, {
+		"name": "DeSando, Anthony",
+		"patrol": "Eagle",
+		"rank": "Scout"
+	}, {
+		"name": "Flannery, Samuel",
+		"patrol": "Simba",
+		"rank": "Scout"
+	}, {
+		"name": "Garg, Manan",
+		"patrol": "Racoon",
+		"rank": "Scout"
+	}, {
+		"name": "Hermansen, Robert",
+		"patrol": "Simba",
+		"rank": "Scout"
+	}, {
+		"name": "Huston, Harrison",
+		"patrol": "Racoon",
+		"rank": "Star"
+	}, {
+		"name": "Johnson, Alexander",
+		"patrol": "Eagle",
+		"rank": "Scout"
+	}, {
+		"name": "Kayal, Tommy",
+		"patrol": "Simba",
+		"rank": "Star"
+	}, {
+		"name": "Kooy, Jaron",
+		"patrol": "Simba",
+		"rank": "First Class"
+	}, {
+		"name": "Kroczynski, Andrew",
+		"patrol": "Eagle",
+		"rank": "Scout"
+	}, {
+		"name": "Kuipers, Paul",
+		"patrol": "Bomber",
+		"rank": "Star"
+	}, {
+		"name": "LaBarre, Chase",
+		"patrol": "Eagle",
+		"rank": "Scout"
+	}, {
+		"name": "Lockwood, Aaron",
+		"patrol": "Bomber",
+		"rank": "Scout"
+	}, {
+		"name": "Lockwood, Sam",
+		"patrol": "Simba",
+		"rank": "Scout"
+	}, {
+		"name": "Mitnick, Benjamin",
+		"patrol": "Racoon",
+		"rank": "Tenderfoot"
+	}, {
+		"name": "Mitnick, Jakob",
+		"patrol": "Eagle",
+		"rank": "Pre-Scout"
+	}, {
+		"name": "Mullahey, Ryan",
+		"patrol": "Bomber",
+		"rank": "Second Class"
+	}, {
+		"name": "Naum, Joseph",
+		"patrol": "Bomber",
+		"rank": "Life Rank"
+	}, {
+		"name": "Orenchuk, Keith",
+		"patrol": "Simba",
+		"rank": "Eagle"
+	}, {
+		"name": "Paruszek, Richard",
+		"patrol": "Phoenix",
+		"rank": "Tenderfoot"
+	}, {
+		"name": "Patel, Varun",
+		"patrol": "Phoenix",
+		"rank": "Scout"
+	}, {
+		"name": "Powley, Russell",
+		"patrol": "Phoenix",
+		"rank": "First Class"
+	}, {
+		"name": "Proscia, Nick",
+		"patrol": "Phoenix",
+		"rank": "Tenderfoot"
+	}, {
+		"name": "Russenberger, Eric",
+		"patrol": "Racoon",
+		"rank": "Second Class"
+	}, {
+		"name": "Schifferle, Alexander",
+		"patrol": "Simba",
+		"rank": "Tenderfoot"
+	}, {
+		"name": "Sitar, Mark",
+		"patrol": "Racoon",
+		"rank": "Second Class"
+	}, {
+		"name": "Spinella, Gianni",
+		"patrol": "Racoon",
+		"rank": "Life Rank"
+	}, {
+		"name": "Spinella, Stefano",
+		"patrol": "Phoenix",
+		"rank": "Scout"
+	}, {
+		"name": "Surico, Michael",
+		"patrol": "Bomber",
+		"rank": "Firts Class"
+	}, {
+		"name": "Tendulkar, Aarnav",
+		"patrol": "Eagle",
+		"rank": "Scout"
+	}, {
+		"name": "Tursi, Joseph",
+		"patrol": "Phoenix",
+		"rank": "First Class"
+	}, {
+		"name": "Weber, Sean",
+		"patrol": "Phoenix",
+		"rank": "Scout"
+	}]
+}

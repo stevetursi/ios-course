@@ -15,13 +15,38 @@ class DealerTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        model = [
-            Vehicle(make: "Honda", model: "Civic", year: 2014, price: 12345.67),
-            Vehicle(make: "Ford", model: "Focus", year: 2015, price: 11234.98),
-            Vehicle(make: "Chevy", model: "Volt", year: 2016, price: 21345.21)
-        ]
+        if
+            let data = NSData(contentsOfURL: self.inventoryFileUrl()),
+            let inventory = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Vehicle]
+        {
+            print("LOADED FROM DOCUMENT DIRECTORY")
+            self.model = inventory
+        } else {
+            print("LOAD HARDCODED DATA")
+            self.model = [
+                Vehicle(make: "Honda", model: "Civic", year: 2014, price: 12345.67),
+                Vehicle(make: "Ford", model: "Focus", year: 2015, price: 11234.98),
+                Vehicle(make: "Chevy", model: "Volt", year: 2016, price:   21345.21)
+            ]
+        }
         
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(DealerTableViewController.willResignActiveNotification(_:)),
+            name: UIApplicationWillResignActiveNotification,
+            object: nil)
+        
+    }
+    
+    func willResignActiveNotification(sender: NSNotification) {
+        print("SAVING TO DOCUMENT DIRECTORY")
+        let data = NSKeyedArchiver.archivedDataWithRootObject(self.model)
+        data.writeToURL(self.inventoryFileUrl(), atomically: true)
+    }
+    
+    private func inventoryFileUrl() -> NSURL {
+        let dirUrl = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+        return dirUrl.URLByAppendingPathComponent("inventory.ser")
     }
 
     @IBAction func addButtonAction(sender: AnyObject) {
@@ -70,6 +95,7 @@ extension DealerTableViewController: CarWasAddedDelegate {
         print("VEHICLE WAS ADDED")
         model.append(car)
         tableView.reloadData()
+        
     }
     
 }
